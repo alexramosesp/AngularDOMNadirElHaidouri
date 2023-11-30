@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class ServeiComp1i2Service {
 
-  num: number=0;
+  num: any;
   constructor() {
 
   }

@@ -10,7 +10,9 @@ import {ServeiComp1i2Service} from "../servei-comp-1i2.service";
   styleUrl: './component2.component.css'
 })
 export class Component2Component implements OnInit{
-  constructor(private s : ServeiComp1i2Service) {
+  serveiComp:any
+  constructor(private s: ServeiComp1i2Service) {
+    this.serveiComp = s.num
   }
   ngOnInit() {
   }
