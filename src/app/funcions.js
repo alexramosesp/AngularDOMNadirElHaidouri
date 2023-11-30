@@ -27,3 +27,15 @@ export function addImage() {
   imatge.src = "../../assets/imatge.jpg"
   imatge = imatge.style.width = 100+"px"
 }
+
+export function mostrarDades() {
+  let llistaDesplegable = document.getElementById("exercici8");
+  let divResultat = document.getElementById("divResultat");
+  let totsElsValors = [];
+  for (let i = 0; i < llistaDesplegable.options.length; i++) {
+    totsElsValors.push(llistaDesplegable.options[i].value);
+  }
+  divResultat.innerHTML = "Todos los valores: " + totsElsValors.join(", ");
+}
+
+
